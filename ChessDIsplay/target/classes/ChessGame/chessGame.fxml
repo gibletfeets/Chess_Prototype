@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChessGame.ChessGameController">
+   <children>
+      <Pane layoutX="600.0" prefHeight="600.0" prefWidth="300.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="550.0" prefWidth="300.0" style="-fx-background-color: #000000;">
+               <content>
+                <AnchorPane maxHeight="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="300.0" style="-fx-background-color: #303030;">
+                     <children>
+                        <Pane fx:id="LeftBar" layoutY="20.0" maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="530.0" prefWidth="30.0" style="-fx-background-color: #404040;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="20.0" />
+                        <Pane prefHeight="20.0" prefWidth="300.0" style="-fx-background-color: #404040;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Pane layoutY="550.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Button fx:id="UndoButton" layoutX="162.0" layoutY="10.0" mnemonicParsing="false" onAction="#undoMove" style="-fx-background-color: #404040;" text="Undo" textFill="WHITE" />
+                  <Button fx:id="NewButton" layoutX="217.0" layoutY="10.0" mnemonicParsing="false" onAction="#newGame" style="-fx-background-color: #404040;" text="New" textFill="WHITE" />
+                  <Button fx:id="SaveButton" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#saveGame" style="-fx-background-color: #404040;" text="Save" textFill="WHITE" />
+                  <Button fx:id="LoadButton" layoutX="65.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadGame" style="-fx-background-color: #404040;" text="Load" textFill="WHITE" />
+                  <Button fx:id="FlipButton" layoutX="117.0" layoutY="10.0" mnemonicParsing="false" onAction="#flipBoard" style="-fx-background-color: #404040;" text="Flip" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</Pane>
